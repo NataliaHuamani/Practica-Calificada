@@ -14,22 +14,22 @@ and open the template in the editor.
     <body>
         <div>REGISTRO DE VENTA</div>
         
-           <form action="VentaServlet">
+        <form action="VistaVenta.jsp" method="post">
         
         <label>Producto </label>
-        <select name="Producto" >
-            <option value="">TV</option>
-            <option value="">RADIO</option>
-            <option value="">TOSTADORA</option>
+        <select name="producto" >
+            <option value="tv">TV</option>
+            <option value="radio">RADIO</option>
+            <option value="tostadora">TOSTADORA</option>
         </select>
         <br>
         <br>
         <label>Cantidad </label>
-        <input type="text" name="Cantidad">
+        <input type="text" name="cantidad">
         <br>
         <br>
         <label>Codigo</label>
-        <select name="Codigo">
+        <select name="codigo">
             <option value="">TRENTINO</option>
             <option value="">JPSegundo</option>
         </select>

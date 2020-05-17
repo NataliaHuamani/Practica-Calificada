@@ -13,7 +13,33 @@
     </head>
     <body>
         <h1>FACTURA DE VENTA</h1>
+        <p>Aqui usted puede verificar si tiene descuento</p>
+
+        <%
+            String producto = request.getParameter("producto");
+            Double cantidad = Double.parseDouble(request.getParameter("cantidad"));
+            String codigo = request.getParameter("codigo");
+
+            double tv = cantidad * 800;
+            double tostadora  = cantidad * 200;
+            double radio = cantidad * 100;
+            
+
+        %>
+
         
-         <a href="/PracticaCalificada/DescargaServlet">Descargar</a>
+              TV : <%=tv%><br>
+              RADIO : <%=radio%><br>
+              TOSTADORA : <%=tostadora%><br>
+
+
+
+
+
+
+
+
+
+            <a href="/PracticaCalificada/DescargaServlet">Descargar</a>
     </body>
 </html>
